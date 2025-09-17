@@ -62,9 +62,8 @@ services:
         value: https://n8n-service-3oh4.onrender.com
       - key: N8N_EDITOR_BASE_URL
         value: https://n8n-service-3oh4.onrender.com
-        
-      - key:N8N_USER_MANAGEMENT_DISABLE_SIGNUP
-        value:false
+      - key: N8N_USER_MANAGEMENT_DISABLE_SIGNUP
+        value: false
 
 databases:
   - name: n8n-db
