@@ -51,6 +51,16 @@ services:
         fromDatabase:
           name: n8n-db
           property: user
+      - key: N8N_HOST
+        value: n8n-service-3oh4.onrender.com    # 換成你的 Render 網域或自有網域
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_PORT
+        value: $PORT                    # 綁定 Render 指定的埠
+      - key: WEBHOOK_URL
+        value: https://n8n-service-3oh4.onrender.com
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n-service-3oh4.onrender.com
 
 databases:
   - name: n8n-db
